@@ -132,8 +132,8 @@ echo "$DUMP_AFTER"
 # Evaluate: If the first hexdump is equal to the second hexdump, probably TRIM 
 # is not working. The two dumps must differ!
 if [ "$DUMP_BEFORE" = "$DUMP_AFTER" ]; then
-  printf "\nTRIM is probably not working!\n"
+  printf "\nTRIM is probably NOT working!\n"
   exit -3
 fi
-printf "\nTRIM seems to work properly.\n"
+printf "\nTRIM seems to work fine.\n"
 exit 0
