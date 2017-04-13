@@ -25,4 +25,5 @@ Shows all core states and some related information as a formatted table for Bayt
 power_saving
 ------------
 
-Lowering power consumption on Ubuntu based Linux by activatung *SATA Link Power Management* and turning on *audio power management*.
+Lowering power consumption on Ubuntu (16.10) based Linux by activatung *SATA Link Power Management* and turning on *audio power management*.
+
