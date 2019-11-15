@@ -3,8 +3,8 @@
 #title:       c6off+c7on.sh
 #description: Disables all C6 and enables all C7 core states for Baytrail CPUs
 #author:      Wolfgang Reimer <linuxball (at) gmail.com>
-#date:        2016014
-#version:     1.0    
+#date:        20190616
+#version:     2.0    
 #usage:       sudo <path>/c6off+c7on.sh
 #notes:       Intended as test script to verify whether erratum VLP52 (see
 #             [1]) is the root cause for kernel bug 109051 (see [2]). In order
@@ -32,8 +32,8 @@ for cpu in cpu[0-9]*; do
 		cd "$dir"
 		read name <name
 		case $name in
-			C6*-BYT) disable 1;;
-			C7*-BYT) disable 0;;
+			C6*) disable 1;;
+			C7*) disable 0;;
 		esac
 		cd ../../..
 	done
