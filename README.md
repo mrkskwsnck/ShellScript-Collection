@@ -3,27 +3,27 @@ ShellScript-Collection
 
 Collection of Shell scripts for Linux
 
-
-icanhaztrim
------------
-
-Testing for SSDs whether TRIM function is set up correctly and working properly.
-
-
 c6off+c7on
 ----------
 
 Bay Trail bugfix: Disables all C6 and enables all C7 core states for Baytrail CPUs.
-
 
 cstateInfo
 ----------
 
 Shows all core states and some related information as a formatted table for Baytrail CPUs.
 
+icanhaztrim
+-----------
 
-power_saving
-------------
+Testing for SSDs whether TRIM function is set up correctly and working properly.
 
-Lowering power consumption on Ubuntu (16.10) based Linux by activatung *SATA Link Power Management* and turning on *audio power management*.
+enable_audio_codec_power_management
+-----------------------------------
 
+Lowering power consumption on Ubuntu (16.10) based Linux by turning on *audio power management*.
+
+enable_sata_link_power_management
+---------------------------------
+
+Lowering power consumption on Ubuntu (16.10) based Linux by activatung *SATA Link Power Management*.
