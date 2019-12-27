@@ -4,6 +4,8 @@
 #		working properly. See the given URL for further information.
 # URL:		https://wiki.ubuntuusers.de/SSD/TRIM/Testen/
 # Author:	Markus Kwaśnicki
+#
+# Known issues: Not working reliably with LVM partition scheme
 
 
 ################################################################################
