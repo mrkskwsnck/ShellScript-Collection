@@ -4,6 +4,8 @@
 #		working properly. See the given URL for further information.
 # URL:		https://wiki.ubuntuusers.de/SSD/TRIM/Testen/
 # Author:	Markus Kwaśnicki
+#
+# Known issues: Not working reliably with LVM partition scheme
 
 
 ################################################################################
@@ -123,7 +125,7 @@ rm "$TEST_FILE"
 clear_cache
 
 # Now trim all file systems!
-/etc/cron.weekly/fstrim
+/sbin/fstrim --all
 
 # Read test file from file system after TRIMming.
 DUMP_AFTER=$(dd bs=$BLOCKSIZE skip=$OFFSET count=$LENGTH if=$DEVICE 2> /dev/null | hexdump -C)
