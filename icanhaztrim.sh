@@ -123,7 +123,7 @@ rm "$TEST_FILE"
 clear_cache
 
 # Now trim all file systems!
-/etc/cron.weekly/fstrim
+/sbin/fstrim --all
 
 # Read test file from file system after TRIMming.
 DUMP_AFTER=$(dd bs=$BLOCKSIZE skip=$OFFSET count=$LENGTH if=$DEVICE 2> /dev/null | hexdump -C)
