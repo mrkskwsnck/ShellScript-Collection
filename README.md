@@ -22,6 +22,7 @@ enable_audio_codec_power_management
 -----------------------------------
 
 Lowering power consumption on Ubuntu (16.10) based Linux by turning on *audio power management*.
+May lead to unwanted speaker crackle!
 
 enable_sata_link_power_management
 ---------------------------------
